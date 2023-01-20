@@ -8,6 +8,7 @@ import com.nicolaspetras.splfantasy.service.scorer.teams.FantasyTeamScorer
 import com.nicolaspetras.splfantasy.service.scraper.scrapeSplStats
 import com.nicolaspetras.splfantasy.utility.convertFantasyTeamScoresToApiData
 import com.nicolaspetras.splfantasy.utility.convertMatchScoresToPlayerScore
+import com.nicolaspetras.splfantasy.utility.printSeasonScores
 import org.springframework.stereotype.Service
 import org.springframework.web.bind.annotation.RestController
 
@@ -23,6 +24,7 @@ class SplFantasyManager(
 
     init {
         fantasyTeamScorer.scoreFantasyTeams(seasonScores)
+        printSeasonScores(seasonScores)
     }
 
     fun getFantasyApiData(): ArrayList<FantasyTeamApiData> {
