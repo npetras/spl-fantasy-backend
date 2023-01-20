@@ -15,6 +15,4 @@ class SplFantasyApplication
 
 fun main(args: Array<String>) {
     runApplication<SplFantasyApplication>(*args)
-//    printSeasonScores(seasonScores)
-//    printMatchScoresList(scores)
 }
