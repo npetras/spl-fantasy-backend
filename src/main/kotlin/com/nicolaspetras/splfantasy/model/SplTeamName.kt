@@ -16,5 +16,6 @@ enum class SplTeamName {
     WARGS,
     YOMI,
     MAMBO,
+    STORM,
     NONE
 }
