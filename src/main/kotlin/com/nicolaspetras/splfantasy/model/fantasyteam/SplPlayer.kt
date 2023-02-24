@@ -1,4 +1,7 @@
-package com.nicolaspetras.splfantasy.model
+package com.nicolaspetras.splfantasy.model.fantasyteam
+
+import com.nicolaspetras.splfantasy.model.SmiteRole
+import com.nicolaspetras.splfantasy.model.SplTeamName
 
 class SplPlayer(
     val name: String,

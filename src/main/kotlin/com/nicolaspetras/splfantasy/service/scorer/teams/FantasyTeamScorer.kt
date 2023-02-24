@@ -1,9 +1,8 @@
 package com.nicolaspetras.splfantasy.service.scorer.teams
 
-import com.nicolaspetras.splfantasy.model.FantasyTeamPicks
-import com.nicolaspetras.splfantasy.model.SplFantasyTeamScores
-import com.nicolaspetras.splfantasy.model.SplPlayerSeasonScore
-import org.springframework.stereotype.Service
+import com.nicolaspetras.splfantasy.model.fantasyteam.FantasyTeamPicks
+import com.nicolaspetras.splfantasy.model.fantasyteam.SplFantasyTeamScores
+import com.nicolaspetras.splfantasy.model.score.SplPlayerSeasonScore
 
 class FantasyTeamScorer(
     val fantasyTeamDrafts: ArrayList<FantasyTeamPicks>
@@ -30,6 +29,7 @@ class FantasyTeamScorer(
             fantasyTeamScores.add(
                 SplFantasyTeamScores(
                     playerName = fantasyTeam.playerName,
+                    group = fantasyTeam.group,
                     solo = soloSeasonScore,
                     jungle = jungSeasonScore,
                     mid = midSeasonScore,

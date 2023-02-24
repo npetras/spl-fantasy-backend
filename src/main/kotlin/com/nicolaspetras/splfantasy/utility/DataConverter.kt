@@ -3,7 +3,7 @@
  */
 package com.nicolaspetras.splfantasy.utility
 
-import com.nicolaspetras.splfantasy.model.SplFantasyTeamScores
+import com.nicolaspetras.splfantasy.model.fantasyteam.SplFantasyTeamScores
 import com.nicolaspetras.splfantasy.model.api.FantasyTeamApiData
 import com.nicolaspetras.splfantasy.model.score.SplMatchScore
 import com.nicolaspetras.splfantasy.model.score.SplPlayerMatchScore
@@ -26,6 +26,7 @@ fun convertFantasyTeamScoresToApiData(fantasyTeamScores: ArrayList<SplFantasyTea
     for (score in fantasyTeamScores) {
         val fantasyTeamApiData = FantasyTeamApiData(
             fantasyPlayerName = score.playerName,
+            fantasyTeamGroup = score.group.toString(),
             solo = score.solo.splPlayer.name,
             soloScore = score.solo.overallSeasonScore().toBigDecimal().setScale(1, RoundingMode.UP).toDouble(),
             jungle = score.jungle.splPlayer.name,
