@@ -1,7 +1,7 @@
 package com.nicolaspetras.splfantasy.service.scorer
 
 import com.nicolaspetras.splfantasy.model.SmiteRole
-import com.nicolaspetras.splfantasy.model.fantasyteam.SplPlayer
+import com.nicolaspetras.splfantasy.model.SplPlayer
 import com.nicolaspetras.splfantasy.model.score.SplPlayerSeasonScore
 import com.nicolaspetras.splfantasy.model.SplTeamName
 import com.nicolaspetras.splfantasy.model.collection.SplMatchStats

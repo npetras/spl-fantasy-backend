@@ -1,7 +1,5 @@
 package com.nicolaspetras.splfantasy.model.api
 
-import com.nicolaspetras.splfantasy.model.fantasyteam.FantasyTeamGroup
-
 data class FantasyTeamApiData(
     val fantasyPlayerName: String,
     val fantasyTeamGroup: String,

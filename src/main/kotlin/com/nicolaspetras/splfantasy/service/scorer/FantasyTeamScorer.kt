@@ -1,11 +1,11 @@
-package com.nicolaspetras.splfantasy.service.scorer.teams
+package com.nicolaspetras.splfantasy.service.scorer
 
-import com.nicolaspetras.splfantasy.model.fantasyteam.FantasyTeamPicks
-import com.nicolaspetras.splfantasy.model.fantasyteam.SplFantasyTeamScores
+import com.nicolaspetras.splfantasy.model.draft.FantasyTeamPicks
+import com.nicolaspetras.splfantasy.model.score.SplFantasyTeamScores
 import com.nicolaspetras.splfantasy.model.score.SplPlayerSeasonScore
 
 class FantasyTeamScorer(
-    val fantasyTeamDrafts: ArrayList<FantasyTeamPicks>
+    private val fantasyTeamDrafts: ArrayList<FantasyTeamPicks>
 ) {
     val fantasyTeamScores: ArrayList<SplFantasyTeamScores> = arrayListOf()
 

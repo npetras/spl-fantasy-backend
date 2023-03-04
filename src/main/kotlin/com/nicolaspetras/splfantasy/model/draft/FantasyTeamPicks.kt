@@ -1,8 +1,11 @@
-package com.nicolaspetras.splfantasy.model.fantasyteam
+package com.nicolaspetras.splfantasy.model.draft
+
+import com.nicolaspetras.splfantasy.model.FantasyTeamGroupName
+import com.nicolaspetras.splfantasy.model.SplPlayer
 
 class FantasyTeamPicks(
     val playerName: String,
-    val group: FantasyTeamGroup,
+    val group: FantasyTeamGroupName,
     val soloPick: SplPlayer,
     val junglePick: SplPlayer,
     val midPick: SplPlayer,
